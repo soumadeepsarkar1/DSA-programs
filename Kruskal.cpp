@@ -67,9 +67,9 @@ int kruskals(int g_nodes, vi &g_from, vi &g_to, vi &g_weight) {
 int main()
 {
     int g_nodes,g_edges,i;
-    cin>>g_nodes>>g_edges;
+    cin>>g_nodes>>g_edges; //input number of nodes and number of edges
     vi g_from(g_edges),g_to(g_edges),g_weights(g_edges);
     for(i=0;i<g_edges;i++)
-        cin>>g_from[i]>>g_to[i]>>g_weights[i];
+        cin>>g_from[i]>>g_to[i]>>g_weights[i]; // from_vertex to_vertex edge_weight
     cout<<kruskals(g_nodes,g_from,g_to,g_weights);
 }
